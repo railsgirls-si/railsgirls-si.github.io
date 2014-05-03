@@ -1,4 +1,7 @@
-railsgirls-si.github.io
+Rails Girls Slovenija website
 =======================
 
-RailsGirls.si Jekyll website
+Spletna stran slovenskega dela iniciative Rails Girls. Dopolnitve dobrodošle. Pri izdelavi je bil uporabljen Jekyll.
+
+	jekyll serve
+
