@@ -285,41 +285,20 @@ footer a {
   margin-top: 5px;
 }
 
-
-/*****************************************************************************/
-/*
-/* Posts
-/*
-/*****************************************************************************/
-
-/* standard */
-.post pre {
-  border: 1px solid #ddd;
-  background-color: #eef;
-  padding: 0 .4em;
+#photos {
+  width: 100%;
+}
+#photos img {
+    float:left;
+    max-width: 32%;
+    margin-right: 10px;
 }
 
-.post ul, .post ol {
-  margin-left: 1.35em;
+@media (max-width:992px){
+ #photos img {
+    max-width: 48%;
 }
-
-.post code {
-  border: 1px solid #ddd;
-  background-color: #eef;
-  padding: 0 .2em;
-}
-
-.post pre code {
-  border: none;
-}
-
-/* terminal */
-.post pre.terminal {
-  border: 1px solid #000;
-  background-color: #333;
-  color: #FFF;
-}
-
-.post pre.terminal code {
-  background-color: #333;
+@media (max-width:580px){
+ #photos img {
+    max-width: 100%;
 }
