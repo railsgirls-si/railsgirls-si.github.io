@@ -30,11 +30,12 @@
           <div class="navbar-header">
             <a class="navbar-brand" href="/"><img src="/images/railsgirls-si-logo.png" alt="Rails Girls Slovenija" id="logo" /></a>
           </div>
+          {% capture location %}{{ page.url | remove_first:'/' | split:'/' | first }}{% endcapture %}
           <div class="navbar-menu">
             <ul class="nav navbar-nav navbar-main">
-              <li><a href="/videoteka">Videoteka</a></li>
-              <li><a href="/gradiva">Gradiva</a></li>
-              <li><a href="/iniciativa" id="last-item">O iniciativi</a></li>
+              <li><a {% if location == 'videoteka' %}class="active" {% endif %}href="/videoteka">Videoteka</a></li>
+              <li><a {% if location == 'gradiva' %}class="active" {% endif %}href="/gradiva">Gradiva</a></li>
+              <li><a {% if location == 'iniciativa' %}class="active" {% endif %}href="/iniciativa" id="last-item">O iniciativi</a></li>
             </ul>
           </div>
       </div>

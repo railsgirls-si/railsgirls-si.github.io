@@ -97,6 +97,7 @@ p {
 .navbar-video>li>a {
   color:#fff;
   text-decoration:none;
+  font-weight:300;
   font-size:18px;
   margin-left:0px;
   z-index: 0;
@@ -106,6 +107,11 @@ p {
   background-color:#BB300A;
 } 
 
+
+.navbar-nav>li>.active {
+  text-decoration: underline;
+  font-weight: 400;
+}
 
 @media (max-width: 960px){
   .navbar {
