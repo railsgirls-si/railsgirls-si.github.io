@@ -7,6 +7,7 @@ layout: default
   	{% capture chapter %}{{ page.url | remove_first:'/videoteka/' | split:'/' | first }}{% endcapture %}
     <ul class="nav navbar-nav navbar-video">
       <li ><a href="/videoteka"><span class="glyphicon glyphicon-film"></span></a></li>
+      <li><a {% if location == 'videoteka' and chapter == 'ljubljana2014' %}class="active" {% endif %}href="/videoteka/ljubljana2014">Maj 2014</a></li>
       <li><a {% if location == 'videoteka' and chapter == 'ljubljana2013' %}class="active" {% endif %}href="/videoteka/ljubljana2013">Marec 2013</a></li>
       <li><a {% if location == 'videoteka' and chapter == 'ljubljana2012' %}class="active" {% endif %}href="/videoteka/ljubljana2012">December 2012</a></li>
     </ul>
